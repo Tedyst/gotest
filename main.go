@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/Tedyst/gotest/api"
+	api "github.com/Tedyst/gotest"
 )
 
 func main() {
