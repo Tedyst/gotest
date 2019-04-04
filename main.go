@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"path/filepath"
 
-	api "github.com/Tedyst/gotest"
+	"github.com/Tedyst/gotest/login"
 )
 
 func main() {
-	http.HandleFunc("/", api.Handler)
+	http.HandleFunc("/login", login.Handler)
 	log.Println("Listening on port 3001...")
 	err := http.ListenAndServe(":3001", nil)
 	if err != nil {
